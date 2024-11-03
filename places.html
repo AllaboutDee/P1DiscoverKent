@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore historical places in Kent, UK, organized by town, each with unique heritage and sites to visit.">
+    <meta name="keywords" content="Kent historical places, Kent heritage sites, Kent history, places to visit in Kent">
+    <title>Historical Places in Kent | Discover Kent</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Discover Kent</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="places.html" class="active">Historical Places</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="directory.html">Kent Directory</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="hisplaces.html">His Places</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro-places">
+            <h2>Explore Kent's Historical Sites by Town</h2>
+            <p>Kent is home to many historical sites, each with unique stories and cultural significance. Browse by town below to discover heritage sites, museums, and landmarks.</p>
+        </section>
+
+        <!-- Filter and Search Options -->
+        <section id="filters">
+            <input type="text" id="search" placeholder="Search by town..." aria-label="Search by town">
+            <select id="sort-options" aria-label="Sort by">
+                <option value="alphabetical">Sort by Town (A-Z)</option>
+                <option value="historical-period">Sort by Historical Period</option>
+            </select>
+        </section>
+
+        <!-- Towns and Historical Sites Section with Accordion Style -->
+        <section id="towns">
+            <h2>Discover Kent’s Rich Historical Tapestry</h2>
+            <p>Kent, known as the "Garden of England," is a region steeped in centuries of history, from Roman fortresses and medieval castles to the landmarks of English literary and religious heritage. Each town tells its own story, preserving a unique piece of England’s past. Whether you're following in the footsteps of ancient pilgrims, exploring battlements that once protected the coast, or marveling at architectural treasures, Kent offers countless historical sites for exploration. Browse the towns below to uncover the stories behind Kent’s most cherished sites and plan your journey through time.</p>
+
+            <!-- Maidstone Card -->
+            <div class="town-card" data-period=""> <!-----reminder to search data-period for search function-->
+                <h3>Maidstone</h3>
+                <p class="town-history">Maidstone, the county town of Kent, was a major medieval market center for agriculture and the cloth trade. During the English Civil War, it saw a notable battle between Royalist forces and Parliamentary troops.</p>
+                <div class="visit-section">
+                    <img class="stacked-image" src="assets/images/kent-landmark2.jpg" alt="Leeds Castle in Maidstone">
+                    <img class="stacked-image" src="assets/images/kent-life-museum.jpg" alt="Kent Life Museum - Kent Life Farm">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Leeds Castle:</strong> Often called the "loveliest castle in the world," Leeds Castle has been a royal residence since the 13th century.</li>
+                            <a href="https://www.leeds-castle.com" class="learn-more" target="_blank">Learn More</a>
+                            <li><strong>Kent Museum of Rural Life:</strong> This museum showcases the rural lifestyle and agricultural practices that defined Kent for centuries. These buildings include traditional farmhouses, oast houses, and a village hall, all meticulously restored and furnished to reflect their respective eras and these are situated within Kent Life Farm. </li>
+                            <a href="https://kentlife.org.uk/" class="learn-more" target="_blank">Learn More</a>    
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canterbury Card -->
+            <div class="town-card">
+                <h3>Canterbury</h3>
+                <p class="town-history">Canterbury is renowned for its religious history and the Canterbury Cathedral, a UNESCO World Heritage site. After the murder of Archbishop Thomas Becket in 1170, it became a major pilgrimage site.</p>
+                <div class="visit-section">
+                    <img src="assets/images/canterbury-cathedral.jpg" alt="Canterbury Cathedral">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Canterbury Cathedral:</strong> Headquarters of the Church of England, known for its stained glass and Becket’s Shrine.</li>
+                            <li><strong>St Augustine's Abbey:</strong> Founded in 598, this abbey marks the spread of Christianity in England.</li>
+                            <li><strong>Westgate Towers:</strong> A medieval gatehouse with views over the historic town.</li>
+                        </ul>
+                        <a href="https://www.canterbury-cathedral.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ashford Card -->
+            <div class="town-card">
+                <h3>Ashford</h3>
+                <p class="town-history">A Roman settlement that grew into a significant market town, Ashford became an industrial center in the 19th century thanks to the railway.</p>
+                <div class="visit-section">
+                    <img src="assets/images/godinton-house.jpg" alt="Godinton House and Gardens in Ashford">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Godinton House and Gardens:</strong> A 14th-century house surrounded by beautiful gardens, showcasing historic English country life.</li>
+                            <li><strong>Ashford Museum:</strong> Displays artifacts tracing Ashford's transformation from Roman times to the railway era.</li>
+                        </ul>
+                        <a href="https://www.godintonhouse.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dartford Card -->
+            <div class="town-card">
+                <h3>Dartford</h3>
+                <p class="town-history">Dartford served as a crossing point on the River Thames since ancient times. It’s known for its connections to medieval pilgrimages.</p>
+                <div class="visit-section">
+                    <img src="assets/images/dartford-museum.jpg" alt="Dartford Borough Museum">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Dartford Borough Museum:</strong> This museum showcases the town's history from the Stone Age through to its industrial heritage.</li>
+                            <li><strong>St. Edmund’s Pleasance:</strong> Once home to a leper hospital, the site offers a quiet place of reflection.</li>
+                        </ul>
+                        <a href="https://www.dartford.gov.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dover Card -->
+            <div class="town-card">
+                <h3>Dover</h3>
+                <p class="town-history">Dover, famous for its white cliffs, has been a strategic port and defense site for over 2,000 years.</p>
+                <div class="visit-section">
+                    <img src="assets/images/dover-castle.jpg" alt="Dover Castle">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Dover Castle:</strong> Known as the "Key to England," it has medieval tunnels, a Roman lighthouse, and WWII bunkers.</li>
+                            <li><strong>Roman Painted House:</strong> The best-preserved Roman house in England, with original wall paintings.</li>
+                            <li><strong>Dover Museum:</strong> Known for its Bronze Age Boat, one of the oldest known seagoing boats.</li>
+                        </ul>
+                        <a href="https://www.english-heritage.org.uk/visit/places/dover-castle" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Folkestone Card -->
+            <div class="town-card">
+                <h3>Folkestone</h3>
+                <p class="town-history">Folkestone transitioned from a small fishing village to a popular Victorian seaside resort and an embarkation point during both World Wars.</p>
+                <div class="visit-section">
+                    <img src="assets/images/folkestone-harbour.jpg" alt="Folkestone Harbour Arm">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Leas Lift:</strong> A historic funicular railway that offers scenic views of the coast.</li>
+                            <li><strong>Folkestone Harbour Arm:</strong> Once a busy ferry terminal, now a vibrant cultural space with cafes, art installations, and music.</li>
+                        </ul>
+                        <a href="https://www.folkestoneharbourarm.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gravesend Card -->
+            <div class="town-card">
+                <h3>Gravesend</h3>
+                <p class="town-history">Known for the burial of Pocahontas, who died here in 1617, Gravesend has a history in maritime trade.</p>
+                <div class="visit-section">
+                    <img src="assets/images/st-georges-church.jpg" alt="St. George's Church in Gravesend">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>St. George's Church:</strong> The resting place of Pocahontas, featuring a statue in her honor.</li>
+                            <li><strong>New Tavern Fort:</strong> An 18th-century defense against potential French invasions, with bunkers and tunnels.</li>
+                        </ul>
+                        <a href="https://www.visitgravesend.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gillingham Card -->
+            <div class="town-card">
+                <h3>Gillingham</h3>
+                <p class="town-history">Gillingham's Royal Dockyard supported the Royal Navy for centuries, contributing to its growth during the 17th and 18th centuries.</p>
+                <div class="visit-section">
+                    <img src="assets/images/royal-engineers-museum.jpg" alt="Royal Engineers Museum in Gillingham">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Royal Engineers Museum:</strong> Showcases the engineering feats and innovations of the British Army's Royal Engineers.</li>
+                            <li><strong>Gillingham Pier:</strong> Offers views over the River Medway and historical context of the local shipbuilding industry.</li>
+                        </ul>
+                        <a href="https://www.re-museum.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Margate Card -->
+            <div class="town-card">
+                <h3>Margate</h3>
+                <p class="town-history">Margate became one of Britain’s earliest seaside resorts, attracting artists like J.M.W. Turner.</p>
+                <div class="visit-section">
+                    <img src="assets/images/turner-contemporary.jpg" alt="Turner Contemporary Gallery in Margate">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Turner Contemporary:</strong> A contemporary art gallery celebrating Turner’s legacy in the town.</li>
+                            <li><strong>Shell Grotto:</strong> An underground maze adorned with over 4.6 million shells of unknown origins.</li>
+                            <li><strong>Dreamland:</strong> A vintage amusement park with a retro vibe, capturing the spirit of early British seaside holidays.</li>
+                        </ul>
+                        <a href="https://www.turnercontemporary.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ramsgate Card -->
+            <div class="town-card">
+                <h3>Ramsgate</h3>
+                <p class="town-history">Ramsgate's harbor was granted royal status by King George IV, marking its importance in trade and naval history.</p>
+                <div class="visit-section">
+                    <img src="assets/images/ramsgate-maritime-museum.jpg" alt="Ramsgate Maritime Museum">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Ramsgate Maritime Museum:</strong> Chronicles the maritime history of the town and its role in the Napoleonic Wars.</li>
+                            <li><strong>St. Augustine’s Church:</strong> Designed by Augustus Pugin, this neo-Gothic gem is a pilgrimage site and architecturally significant.</li>
+                        </ul>
+                        <a href="https://www.ramsgatetown.org/ramsgate/maritime_museum" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sevenoaks Card -->
+            <div class="town-card">
+                <h3>Sevenoaks</h3>
+                <p class="town-history">A prosperous market town, Sevenoaks became a retreat for wealthy Londoners who built grand estates here.</p>
+                <div class="visit-section">
+                    <img src="assets/images/knole-house.jpg" alt="Knole House in Sevenoaks">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Knole House and Park:</strong> A grand Tudor mansion with 1,000 acres of parkland, once home to Henry VIII.</li>
+                            <li><strong>Riverhill Himalayan Gardens:</strong> Historic gardens with an international plant collection and views over the Kent Downs.</li>
+                        </ul>
+                        <a href="https://www.nationaltrust.org.uk/knole" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sittingbourne Card -->
+            <div class="town-card">
+                <h3>Sittingbourne</h3>
+                <p class="town-history">Once an important industrial hub, Sittingbourne thrived with the paper and brick industries.</p>
+                <div class="visit-section">
+                    <img src="assets/images/sittingbourne-railway.jpg" alt="Sittingbourne and Kemsley Light Railway">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Sittingbourne and Kemsley Light Railway:</strong> A preserved railway originally used for paper production.</li>
+                            <li><strong>Bredgar & Wormshill Light Railway:</strong> A private steam railway offering scenic rides through the Kent countryside.</li>
+                        </ul>
+                        <a href="https://www.sklr.net" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tonbridge Card -->
+            <div class="town-card">
+                <h3>Tonbridge</h3>
+                <p class="town-history">Known for its castle, Tonbridge was a Norman stronghold during the 13th-century baronial conflicts.</p>
+                <div class="visit-section">
+                    <img src="assets/images/tonbridge-castle.jpg" alt="Tonbridge Castle">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Tonbridge Castle:</strong> Offers a Norman castle keep with medieval exhibitions.</li>
+                            <li><strong>Haysden Country Park:</strong> A riverside park with trails, lakes, and connections to the historic Medway River.</li>
+                        </ul>
+                        <a href="https://www.tonbridgecastle.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tunbridge Wells Card -->
+            <div class="town-card">
+                <h3>Tunbridge Wells</h3>
+                <p class="town-history">Founded as a spa town when Chalybeate Springs were discovered in the 17th century.</p>
+                <div class="visit-section">
+                    <img src="assets/images/the-pantiles.jpg" alt="The Pantiles in Tunbridge Wells">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>The Pantiles:</strong> A historic colonnade of shops and cafes, named after its distinctive tiled paving.</li>
+                            <li><strong>Tunbridge Wells Museum & Art Gallery:</strong> Displays collections on the town's history and its fashionable rise as a spa destination.</li>
+                        </ul>
+                        <a href="https://www.tunbridgewellsmuseum.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatham Card -->
+            <div class="town-card">
+                <h3>Chatham</h3>
+                <p class="town-history">The Royal Dockyard here was a significant center for shipbuilding and naval defense.</p>
+                <div class="visit-section">
+                    <img src="assets/images/historic-dockyard-chatham.jpg" alt="Historic Dockyard in Chatham">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Historic Dockyard Chatham:</strong> Includes warships, historic buildings, and museums.</li>
+                            <li><strong>Fort Amherst:</strong> Built to protect the dockyard, this is the largest Napoleonic fortress in Britain.</li>
+                        </ul>
+                        <a href="https://thedockyard.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aylesford Card -->
+            <div class="town-card">
+                <h3>Aylesford</h3>
+                <p class="town-history">Aylesford is known for its 13th-century Carmelite Priory, established in 1242. The town also has connections to the Battle of Aylesford in 455 AD, which was part of the Anglo-Saxon invasion.</p>
+                <div class="visit-section">
+                    <img src="assets/images/aylesford-priory.jpg" alt="Aylesford Priory">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Aylesford Priory:</strong> One of the oldest Carmelite establishments in the country, this peaceful location offers beautiful grounds, a medieval chapel, and an extensive collection of religious artifacts.</li>
+                            <li><strong>Teapot Island:</strong> An eccentric museum on the River Medway featuring over 8,000 teapots in various designs, adding charm and humor to this historic village.</li>
+                        </ul>
+                        <a href="https://www.thefriars.org.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Broadstairs Card -->
+            <div class="town-card">
+                <h3>Broadstairs</h3>
+                <p class="town-history">Known for its Victorian seaside appeal, Broadstairs was beloved by Charles Dickens, who frequented the town in the 19th century.</p>
+                <div class="visit-section">
+                    <img src="assets/images/dickens-house-museum.jpg" alt="Dickens House Museum in Broadstairs">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Dickens House Museum:</strong> Once the home of a friend of Charles Dickens, the museum offers a look into Dickensian life and inspiration for his novels.</li>
+                            <li><strong>Bleak House:</strong> Overlooking Viking Bay, this was where Dickens wrote *David Copperfield*. The house is a charming spot with incredible views and historical exhibits.</li>
+                        </ul>
+                        <a href="https://www.broadstairsdickensfestival.co.uk/dickens-house-museum" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cranbrook Card -->
+            <div class="town-card">
+                <h3>Cranbrook</h3>
+                <p class="town-history">Once called the "Capital of the Weald," Cranbrook became a center of the wool and cloth trade in the medieval period.</p>
+                <div class="visit-section">
+                    <img src="assets/images/union-mill.jpg" alt="Union Mill in Cranbrook">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Union Mill:</strong> A large and well-preserved windmill from 1814, still working and open to visitors.</li>
+                            <li><strong>Cranbrook Museum:</strong> A quaint museum that delves into the local history, especially the town’s role in the wool trade.</li>
+                        </ul>
+                        <a href="https://www.unionmill.org.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card -->
+            <div class="town-card">
+                <h3>Deal</h3>
+                <p class="town-history">Known as a smuggling hotspot in the 18th century, Deal also served as an essential naval base.</p>
+                <div class="visit-section">
+                    <img src="assets/images/deal-castle.jpg" alt="Deal Castle">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Deal Castle:</strong> Built by Henry VIII as a coastal defense, this well-preserved castle has intricate passageways and cannon rooms.</li>
+                            <li><strong>Timeball Tower:</strong> Used in the 19th century to signal the correct time to passing ships; it’s an unusual structure with maritime heritage exhibits.</li>
+                        </ul>
+                        <a href="https://www.english-heritage.org.uk/visit/places/deal-castle" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edenbridge Card -->
+            <div class="town-card">
+                <h3>Edenbridge</h3>
+                <p class="town-history">A medieval market town known for its rural agriculture and fairs, Edenbridge still retains much of its historic charm.</p>
+                <div class="visit-section">
+                    <img src="assets/images/hever-castle.jpg" alt="Hever Castle in Edenbridge">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Hever Castle:</strong> The childhood home of Anne Boleyn, Henry VIII’s second wife, filled with Tudor history, beautiful gardens, and a moat.</li>
+                            <li><strong>Eden Valley Museum:</strong> Located in a 14th-century building, offering artifacts from local history, including Roman finds and WWI memorabilia.</li>
+                        </ul>
+                        <a href="https://www.hevercastle.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faversham Card -->
+            <div class="town-card">
+                <h3>Faversham</h3>
+                <p class="town-history">Known for its breweries and the gunpowder industry, Faversham has long been a market town with a history that goes back to Roman times.</p>
+                <div class="visit-section">
+                    <img src="assets/images/shepherd-neame-brewery.jpg" alt="Shepherd Neame Brewery in Faversham">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Shepherd Neame Brewery:</strong> Britain’s oldest brewery, with tours offering a look into traditional brewing techniques.</li>
+                            <li><strong>Chart Gunpowder Mills:</strong> Once part of a major industry, the mills now provide a glimpse into the manufacturing of gunpowder in the 17th century.</li>
+                        </ul>
+                        <a href="https://www.shepherdneame.co.uk/brewery-tours" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herne Bay Card -->
+            <div class="town-card">
+                <h3>Herne Bay</h3>
+                <p class="town-history">Herne Bay developed as a seaside town in the early 19th century, attracting holidaymakers with its pier and promenade.</p>
+                <div class="visit-section">
+                    <img src="assets/images/herne-bay-pier.jpg" alt="Herne Bay Pier">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Herne Bay Pier:</strong> The historic pier offers a funfair, seaside views, and small artisan shops.</li>
+                            <li><strong>The Seaside Museum:</strong> Provides insight into the maritime history of Herne Bay, featuring exhibits from local fossils to Victorian beach life.</li>
+                        </ul>
+                        <a href="https://theseasidemuseumhernebay.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hythe Card -->
+            <div class="town-card">
+                <h3>Hythe</h3>
+                <p class="town-history">One of the original Cinque Ports, Hythe has a history of maritime trade, piracy, and fishing.</p>
+                <div class="visit-section">
+                    <img src="assets/images/st-leonards-church.jpg" alt="St. Leonard’s Church in Hythe">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>St. Leonard’s Church:</strong> Famous for its ossuary, one of only two in England, containing the bones of thousands.</li>
+                            <li><strong>Royal Military Canal:</strong> Built as a defense during the Napoleonic Wars, the canal now provides a peaceful walking path.</li>
+                        </ul>
+                        <a href="https://www.hythe-tourism.com" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lydd Card -->
+            <div class="town-card">
+                <h3>Lydd</h3>
+                <p class="town-history">This ancient town flourished in medieval times due to its wool trade. Known as one of the oldest towns in Kent, Lydd has historic churches and marshland landscapes.</p>
+                <div class="visit-section">
+                    <img src="assets/images/all-saints-church.jpg" alt="All Saints Church in Lydd">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>All Saints Church:</strong> Known as the "Cathedral of the Marsh," this grand 15th-century church has distinctive architecture and medieval brasses.</li>
+                        </ul>
+                        <a href="https://www.lyddchurch.com" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minster-in-Thanet Card -->
+            <div class="town-card">
+                <h3>Minster-in-Thanet</h3>
+                <p class="town-history">Minster was an early religious center founded by St. Mildred and became influential in Anglo-Saxon Christianity.</p>
+                <div class="visit-section">
+                    <img src="assets/images/minster-abbey.jpg" alt="Minster Abbey in Minster-in-Thanet">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Minster Abbey:</strong> Dating back to 670 AD, Minster Abbey is one of England’s oldest religious sites and a serene spot for contemplation.</li>
+                            <li><strong>St. Mary's Church:</strong> Another historic site in the village, known for its striking architecture and connection to the abbey.</li>
+                        </ul>
+                        <a href="https://www.minsterabbeynuns.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Romney Card -->
+            <div class="town-card">
+                <h3>New Romney</h3>
+                <p class="town-history">Another of the Cinque Ports, New Romney has seen everything from Roman settlers to devastating storms that altered the coastline.</p>
+                <div class="visit-section">
+                    <img src="assets/images/st-nicholas-church.jpg" alt="St. Nicholas Church in New Romney">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>St. Nicholas Church:</strong> A Norman church once overlooking the harbor, now several miles inland due to historic flooding.</li>
+                            <li><strong>Romney, Hythe and Dymchurch Railway:</strong> Known as the world’s smallest public railway, it offers scenic rides through the Romney Marsh.</li>
+                        </ul>
+                        <a href="https://www.rhdr.org.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paddock Wood Card -->
+            <div class="town-card">
+                <h3>Paddock Wood</h3>
+                <p class="town-history">Developed in the 19th century as a railway town, particularly famous for hop and fruit farming.</p>
+                <div class="visit-section">
+                    <img src="assets/images/hop-farm.jpg" alt="Hop Farm Country Park in Paddock Wood">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Hop Farm Country Park:</strong> Formerly the largest hop farm in the world, it now offers family activities and history of Kent’s brewing and hop-picking traditions.</li>
+                            <li><strong>Mascalls Gallery:</strong> A small gallery that hosts a range of contemporary and historic art exhibitions.</li>
+                        </ul>
+                        <a href="https://www.thehopfarm.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queenborough Card -->
+            <div class="town-card">
+                <h3>Queenborough</h3>
+                <p class="town-history">Originally established as a fortification by Edward III, Queenborough served a defensive role on the Isle of Sheppey.</p>
+                <div class="visit-section">
+                    <img src="assets/images/queenborough-castle.jpg" alt="Queenborough Castle">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Queenborough Castle:</strong> Although the castle is mostly ruins, it holds historical importance as a royal fortress.</li>
+                            <li><strong>Queenborough Harbour:</strong> A peaceful harbor with scenic boat rides and connections to maritime trade.</li>
+                        </ul>
+                        <a href="https://www.english-heritage.org.uk/visit/places/queenborough-castle/" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rochester Card -->
+            <div class="town-card">
+                <h3>Rochester</h3>
+                <p class="town-history">An ancient city with Norman roots, Rochester was a cultural center that inspired Charles Dickens.</p>
+                <div class="visit-section">
+                    <img src="assets/images/rochester-castle.jpg" alt="Rochester Castle">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Rochester Castle:</strong> One of the best-preserved Norman castles in England, known for its tall keep and views over the Medway.</li>
+                            <li><strong>Rochester Cathedral:</strong> Founded in 604 AD, it’s England’s second oldest cathedral, with beautiful architecture and stained glass.</li>
+                            <li><strong>Guildhall Museum:</strong> Offers exhibits on the city’s history, from Roman artifacts to Victorian times.</li>
+                        </ul>
+                        <a href="https://www.rochestercathedral.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sandwich Card -->
+            <div class="town-card">
+                <h3>Sandwich</h3>
+                <p class="town-history">As one of the Cinque Ports, Sandwich was a medieval hub for trade, with well-preserved streets and buildings.</p>
+                <div class="visit-section">
+                    <img src="assets/images/sandwich-guildhall.jpg" alt="Sandwich Guildhall Museum">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Sandwich Guildhall Museum:</strong> The town hall has fascinating displays on Sandwich’s rich history and the guildhall itself is of historical interest.</li>
+                            <li><strong>St. Peter’s Church:</strong> A blend of Norman and Tudor architecture with a peaceful garden and a bell tower visitors can climb.</li>
+                        </ul>
+                        <a href="https://www.sandwichtowncouncil.gov.uk/guildhall-museum" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sheerness Card -->
+            <div class="town-card">
+                <h3>Sheerness</h3>
+                <p class="town-history">Sheerness developed around its naval dockyard, established in the 17th century and vital for the Royal Navy.</p>
+                <div class="visit-section">
+                    <img src="assets/images/blue-town-heritage.jpg" alt="Blue Town Heritage Centre">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Blue Town Heritage Centre:</strong> Offers a history of Sheerness, with exhibitions on the dockyard and local heritage.</li>
+                            <li><strong>Sheerness Dockyard Church:</strong> Though partly in ruins, the church is historically significant as part of the dockyard community.</li>
+                        </ul>
+                        <a href="https://www.sheernessheritage.com" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snodland Card -->
+            <div class="town-card">
+                <h3>Snodland</h3>
+                <p class="town-history">Known for its medieval roots, Snodland grew during the industrial revolution due to its thriving paper production.</p>
+                <div class="visit-section">
+                    <img src="assets/images/holborough-marshes.jpg" alt="Holborough Marshes">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Holborough Marshes:</strong> A nature reserve with trails that highlight the biodiversity of the Medway Valley.</li>
+                            <li><strong>All Saints Church:</strong> This historic church dates back to the Saxon era and contains beautiful Norman carvings.</li>
+                        </ul>
+                        <a href="https://www.kentwildlife.org.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staplehurst Card -->
+            <div class="town-card">
+                <h3>Staplehurst</h3>
+                <p class="town-history">A market village connected to the cloth industry, with a rural, picturesque setting.</p>
+                <div class="visit-section">
+                    <img src="assets/images/staplehurst-church.jpg" alt="Staplehurst Church">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Staplehurst Church:</strong> A historic building with connections to the medieval cloth trade.</li>
+                            <li><strong>Sissinghurst Castle Gardens:</strong> Famous for its beautiful gardens created by writer Vita Sackville-West, a short drive away.</li>
+                        </ul>
+                        <a href="https://www.nationaltrust.org.uk/sissinghurst-castle" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swanley Card -->
+            <div class="town-card">
+                <h3>Swanley</h3>
+                <p class="town-history">Once a small agricultural village, Swanley expanded rapidly with the railway.</p>
+                <div class="visit-section">
+                    <img src="assets/images/swanley-park.jpg" alt="Swanley Park">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Swanley Park:</strong> Offers boating lakes, scenic trails, and a miniature railway.</li>
+                            <li><strong>Lullingstone Castle:</strong> One of England’s oldest family estates with the World Garden, featuring plants from around the globe.</li>
+                        </ul>
+                        <a href="https://www.lullingstonecastle.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tenterden Card -->
+            <div class="town-card">
+                <h3>Tenterden</h3>
+                <p class="town-history">Known for its wool trade, Tenterden was a thriving market town in the medieval period.</p>
+                <div class="visit-section">
+                    <img src="assets/images/kent-east-sussex-railway.jpg" alt="Kent & East Sussex Railway">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Kent & East Sussex Railway:</strong> A heritage railway running through the scenic countryside.</li>
+                            <li><strong>Chapel Down Winery:</strong> A popular vineyard that offers tours and tastings of locally produced wines.</li>
+                        </ul>
+                        <a href="https://www.chapeldown.com" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- West Malling Card -->
+            <div class="town-card">
+                <h3>West Malling</h3>
+                <p class="town-history">Known for its abbey founded in the 11th century, West Malling grew around its religious center.</p>
+                <div class="visit-section">
+                    <img src="assets/images/st-leonards-tower.jpg" alt="St. Leonard’s Tower">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>St. Leonard’s Tower:</strong> An 11th-century Norman keep that offers a glimpse into medieval defense structures.</li>
+                            <li><strong>West Malling Abbey:</strong> Still an active nunnery with beautiful architecture and gardens.</li>
+                        </ul>
+                        <a href="https://www.westmallingabbey.org" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Westerham Card -->
+            <div class="town-card">
+                <h3>Westerham</h3>
+                <p class="town-history">Westerham was historically an agricultural town that became significant due to its connections to General James Wolfe and Sir Winston Churchill.</p>
+                <div class="visit-section">
+                    <img src="assets/images/chartwell-house.jpg" alt="Chartwell House">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Chartwell House:</strong> Former home of Winston Churchill, with a rich history and his preserved study.</li>
+                            <li><strong>Quebec House:</strong> Birthplace of General Wolfe, hero of the Battle of Quebec.</li>
+                        </ul>
+                        <a href="https://www.nationaltrust.org.uk/chartwell" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Whitstable Card -->
+            <div class="town-card">
+                <h3>Whitstable</h3>
+                <p class="town-history">Known for its historic oyster trade, Whitstable is a fishing village with a lively maritime culture.</p>
+                <div class="visit-section">
+                    <img src="assets/images/whitstable-harbour.jpg" alt="Whitstable Harbour">
+                    <div class="visit-info">
+                        <h4>Places to Visit:</h4>
+                        <ul>
+                            <li><strong>Whitstable Harbour:</strong> A vibrant spot where visitors can experience the traditional fishing culture.</li>
+                            <li><strong>Whitstable Castle:</strong> Known for its gardens and tea rooms, ideal for a relaxing afternoon.</li>
+                            <li><strong>Oyster Yards:</strong> The birthplace of Whitstable’s famous oysters, with opportunities to sample them locally.</li>
+                        </ul>
+                        <a href="https://www.whitstablecastle.co.uk" class="learn-more" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Accordion, Search, and Sorting -->
+    <script src="https://kit.fontawesome.com/f0ebc05836.js" crossorigin="anonymous"></script>
+    <script>
+        // Accordion effect
+        document.querySelectorAll('.accordion').forEach(button => {
+            button.addEventListener('click', () => {
+                const panel = button.nextElementSibling;
+                button.classList.toggle('active');
+                panel.style.maxHeight ? panel.style.maxHeight = null : panel.style.maxHeight = panel.scrollHeight + 'px';
+            });
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function() {
+            const searchText = this.value.toLowerCase();
+            document.querySelectorAll('.town-card').forEach(town => {
+                const townName = town.querySelector('h3').innerText.toLowerCase();
+                if (townName.includes(searchText)) {
+                    town.style.display = "";
+                } else {
+                    town.style.display = "none";
+                }
+            });
+        });
+
+        // Sort functionality
+        document.getElementById('sort-options').addEventListener('change', function() {
+            const sortBy = this.value;
+            const townContainer = document.getElementById('towns');
+            let townsArray = Array.from(document.querySelectorAll('.town-card'));
+
+            if (sortBy === 'alphabetical') {
+                townsArray.sort((a, b) => a.querySelector('h3').innerText.localeCompare(b.querySelector('h3').innerText));
+            } else if (sortBy === 'historical-period') {
+                townsArray.sort((a, b) => a.getAttribute('data-period').localeCompare(b.getAttribute('data-period')));
+            }
+
+            townsArray.forEach(town => townContainer.appendChild(town));
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2024 Discover Kent. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

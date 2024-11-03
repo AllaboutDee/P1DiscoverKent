@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset default browser styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf0e7; /* Light green background for a fresh feel */
+}
+
+/* Add padding to main content */
+main {
+    padding: 20px; /* Add padding to main for spacing */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #2e2e2e; /* Darker color for headings for contrast */
+    letter-spacing: 1px;
+    margin-bottom: 15px; /* Add margin below headings for spacing */
+}
+
+/* Hidden heading */
+.hidden-heading {
+    display: none;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* Keep header white for clarity */
+    padding: 1rem 2rem; /* Increased padding for a better look */
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Menu */
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 1px;
+    list-style-type: none;
+    display: flex;
+}
+
+#menu > li {
+    margin-left: 2em; /* Increased margin for better spacing */
+}
+
+/* Active menu item */
+.active {
+    border-bottom: 2px solid #5a7f37; /* Soft green for active menu item */
+}
+
+/* Navbar toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Hero section */
+#hero {
+    height: 500px;
+    width: 100%;
+    background: url("../images/kent-hero.jpg") no-repeat center center / cover;
+    position: relative;
+}
+
+#hero h2, #hero p {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Subscription form */
+#subscribe {
+    background-image: url("../images/kent-subscribe.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 10%; /* Increased padding for more space */
+    display: flex;
+    justify-content: center;
+}
+
+#subscribe-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#subscribe-form h2 {
+    color: #2e2e2e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a7f37; /* Soft green for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #6a9f47; /* Lighter green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Media query: small devices (max-width: 768px) */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    #nav-toggle:checked ~ #menu {
+        display: flex;
+    }
+
+    #subscribe-form {
+        width: 90%;
+    }
+}
+
+/* Media query: medium devices (768px and up) */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #hero h2, #hero p {
+        left: 40px;
+        bottom: 60px;
+    }
+}
+
+<!----playing about with "Historical Places" -------------->
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Town Card Styling */
+.town-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.town-card h3 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+.town-history {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Visit Section Styling */
+.visit-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.visit-section img {
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.visit-info {
+    flex: 1;
+}
+
+.visit-info h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.visit-info ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+.visit-info li {
+    margin-bottom: 5px;
+}
+
+/* Learn More Button */
+.learn-more {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #3498db;
+}

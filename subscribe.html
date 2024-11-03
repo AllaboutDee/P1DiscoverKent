@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for search engines -->
+    <meta name="description" content="Subscribe to Discover Kent to receive updates on events, places, and cultural insights in Kent, UK.">
+    <meta name="keywords" content="Kent, UK, Subscribe, events, cultural updates, places to visit, history">
+    <!-- Title -->
+    <title>Subscribe | Discover Kent</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Discover Kent</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="places.html">Historical Places</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="directory.html">Kent Directory</a></li>
+                <li><a href="subscribe.html" class="active">Subscribe</a></li>
+                <li><a href="hisplaces.html">His Places</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section id="subscribe">
+            <form id="subscribe-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-envelope-open-text"></i> Stay Connected with Kent!</h2>
+                <p>Subscribe to Discover Kent and receive the latest updates on events, history, and culture across Kent!</p>
+
+                <!-- First Name Input -->
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                
+                <!-- Last Name Input -->
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                
+                <!-- Email Address Input -->
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+
+                <!-- Interest Options -->
+                <fieldset class="interest-options">
+                    <legend>What interests you most?</legend>
+                    <label for="events">Events</label>
+                    <input type="radio" name="interest" id="events" value="events" required>
+                    
+                    <label for="history">History</label>
+                    <input type="radio" name="interest" id="history" value="history" required>
+                    
+                    <label for="places">Places to Visit</label>
+                    <input type="radio" name="interest" id="places" value="places" required>
+                    
+                    <label for="all">All of the Above</label>
+                    <input type="radio" name="interest" id="all" value="all" required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" class="subscribe-button">Subscribe Now</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter-square"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <p>&copy; 2024 Discover Kent. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/f0ebc05836.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

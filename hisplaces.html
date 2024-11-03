@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore historical places in Kent, UK, organized by town, each with unique heritage and sites to visit.">
+    <meta name="keywords" content="Kent historical places, Kent heritage sites, Kent history, places to visit in Kent">
+    <title>Historical Places in Kent | Discover Kent</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Discover Kent</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="places.html" class="active">Historical Places</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="directory.html">Kent Directory</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="hisplaces.html">His Places</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Filter and Search Options -->
+        <section id="filters">
+            <input type="text" id="search" placeholder="Search by town..." aria-label="Search by town">
+            <select id="sort-options" aria-label="Sort by">
+                <option value="alphabetical">Sort by Town (A-Z)</option>
+                <option value="historical-period">Sort by Historical Period</option>
+            </select>
+        </section>
+
+        <!-- Towns Section -->
+        <section id="towns">
+            <div class="town" data-period="medieval">
+                <div class="accordion">Town Name</div>
+                <div class="panel">
+                    <p>Details about the town.</p>
+                </div>
+            </div>
+            <!-- Repeat for more towns -->
+        </section>
+    </main>
+
+    <!-- Maidstone Card -->
+    <div class="town-card">
+        <h3>Maidstone</h3>
+        <p class="town-history">Maidstone, the county town of Kent, was a major medieval market center for agriculture and the cloth trade. During the English Civil War, it saw a notable battle between Royalist forces and Parliamentary troops.</p>
+        <div class="visit-section">
+            <img src="assets/images/leeds-castle.jpg" alt="Leeds Castle in Maidstone">
+            <div class="visit-info">
+                <h4>Places to Visit:</h4>
+                <ul>
+                    <li><strong>Leeds Castle:</strong> Often called the "loveliest castle in the world," Leeds Castle has been a royal residence since the 13th century.</li>
+                    <li><strong>Kent Museum of Rural Life:</strong> This museum showcases the rural lifestyle and agricultural practices that defined Kent for centuries.</li>
+                </ul>
+                <a href="https://www.leeds-castle.com" class="learn-more" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Canterbury Card -->
+    <div class="town-card">
+        <h3>Canterbury</h3>
+        <p class="town-history">Canterbury is renowned for its religious history and the Canterbury Cathedral, a UNESCO World Heritage site. After the murder of Archbishop Thomas Becket in 1170, it became a major pilgrimage site.</p>
+        <div class="visit-section">
+            <img src="assets/images/canterbury-cathedral.jpg" alt="Canterbury Cathedral">
+            <div class="visit-info">
+                <h4>Places to Visit:</h4>
+                <ul>
+                    <li><strong>Canterbury Cathedral:</strong> Headquarters of the Church of England, known for its stained glass and Becket’s Shrine.</li>
+                    <li><strong>St Augustine's Abbey:</strong> Founded in 598, this abbey marks the spread of Christianity in England.</li>
+                    <li><strong>Westgate Towers:</strong> A medieval gatehouse with views over the historic town.</li>
+                </ul>
+                <a href="https://www.canterbury-cathedral.org" class="learn-more" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ashford Card -->
+    <div class="town-card">
+        <h3>Ashford</h3>
+        <p class="town-history">A Roman settlement that grew into a significant market town, Ashford became an industrial center in the 19th century thanks to the railway.</p>
+        <div class="visit-section">
+            <img src="assets/images/godinton-house.jpg" alt="Godinton House and Gardens in Ashford">
+            <div class="visit-info">
+                <h4>Places to Visit:</h4>
+                <ul>
+                    <li><strong>Godinton House and Gardens:</strong> A 14th-century house surrounded by beautiful gardens, showcasing historic English country life.</li>
+                    <li><strong>Ashford Museum:</strong> Displays artifacts tracing Ashford's transformation from Roman times to the railway era.</li>
+                </ul>
+                <a href="https://www.godintonhouse.co.uk" class="learn-more" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Accordion, Search, and Sorting -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Accordion functionality
+            document.querySelectorAll('.accordion').forEach(button => {
+                button.addEventListener('click', () => {
+                    const panel = button.nextElementSibling;
+                    button.classList.toggle('active');
+                    panel.style.maxHeight ? panel.style.maxHeight = null : panel.style.maxHeight = panel.scrollHeight + 'px';
+                });
+            });
+
+            // Search functionality
+            document.getElementById('search').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase();
+                document.querySelectorAll('.town').forEach(town => {
+                    const townName = town.querySelector('.accordion').innerText.toLowerCase();
+                    town.style.display = townName.includes(searchText) ? "" : "none";
+                });
+            });
+
+            // Sort functionality
+            document.getElementById('sort-options').addEventListener('change', function() {
+                const sortBy = this.value;
+                const townContainer = document.getElementById('towns');
+                let townsArray = Array.from(document.querySelectorAll('.town'));
+
+                if (sortBy === 'alphabetical') {
+                    townsArray.sort((a, b) => a.querySelector('.accordion').innerText.localeCompare(b.querySelector('.accordion').innerText));
+                } else if (sortBy === 'historical-period') {
+                    townsArray.sort((a, b) => a.getAttribute('data-period').localeCompare(b.getAttribute('data-period')));
+                }
+
+                townsArray.forEach(town => townContainer.appendChild(town));
+            });
+        });
+    </script>
+</body>
+</html>
