@@ -1,149 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore historical places in Kent, UK, organized by town, each with unique heritage and sites to visit.">
-    <meta name="keywords" content="Kent historical places, Kent heritage sites, Kent history, places to visit in Kent">
-    <title>Historical Places in Kent | Discover Kent</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Explore the rich history of Kent, UK, and discover its historical sites, events, and attractions for family days out.">
+    <meta name="keywords" content="Kent history, Kent tourism, historical sites in Kent, family attractions in Kent">
+    <title>Discover Kent</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/accordianstyle.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <h1 id="logo">Discover Kent</h1>
-        </a>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
+        <h1 id="logo">Discover Kent</h1>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle" style="display: none;">
+        <label for="nav-toggle" class="nav-toggle-label" style="display: none;">
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">History</a></li>
-                <li><a href="places.html" class="active">Historical Places</a></li>
+                <li><a href="places.html">Historical Places</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="directory.html">Kent Directory</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
-                <li><a href="hisplaces.html">His Places</a></li>
+                <li><a href="hisplaces.html class="active"></a>His Places</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main content -->
     <main>
-        <!-- Filter and Search Options -->
-        <section id="filters">
-            <input type="text" id="search" placeholder="Search by town..." aria-label="Search by town">
-            <select id="sort-options" aria-label="Sort by">
-                <option value="alphabetical">Sort by Town (A-Z)</option>
-                <option value="historical-period">Sort by Historical Period</option>
-            </select>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div id="cover-text">
+                <h2>Kent's Historical Architecture</h2>
+            </div>
         </section>
 
-        <!-- Towns Section -->
-        <section id="towns">
-            <div class="town" data-period="medieval">
-                <div class="accordion">Town Name</div>
-                <div class="panel">
-                    <p>Details about the town.</p>
-                </div>
+        <!-- Introduction to Kent intro Section -->
+        <section>
+            <br>
+            <h2 id="heritage">Explore the Heart of England's Heritage</h2>
+            <div>
+                <p>Welcome to Kent, the Garden of England—a place where history meets vibrant culture. From ancient castles and iconic cathedrals to lush landscapes and charming coastal towns, Kent offers endless opportunities for exploration.</p>
+                <br>
+                <p>Discover centuries-old stories, breathtaking sights, and exciting events throughout the county. Whether you're here for a family day out or an immersive journey through England's past, Kent is ready to enchant you.</p>
             </div>
-            <!-- Repeat for more towns -->
+            <br>
+            <div>
+            <hr>
+            <br>
+                <!-- Garden Section -->
+            <section id="gardens">
+                <div id="cover-text">
+                    <h2> Garden's Of England</h2>
+                </div>    
+            </section> 
+            </div>
+            <br>
+            <hr>
+            <br>
+            <!-----Featured highlight section-->
+            <div>
+                <h3>Historical Towns <i class="fa-solid fa-landmark"></i></h3>
+                <p>Discover unique towns across Kent, each with a fascinating story to tell.</p>
+                <a href="places.html" class="btn">Learn More</a>
+                <br>
+                <h3>Upcoming Events <i class="fa-solid fa-calendar-days"></i></h3>
+                <p>Don’t miss Kent’s annual festivals, fairs, and historical reenactments.</p>
+                <a href="events.html" class="btn">View Events</a>
+                <br>
+                <h3>Special Offers <i class="fa-solid fa-highlighter"></i></h3>
+                <p>Subscribe to receive exclusive offers, discounts, and more.</p>
+                <a href="subscribe.html" class="btn">Subscribe Now</a>
+                <br>
+            </div>
         </section>
     </main>
 
-    <!-- Maidstone Card -->
-    <div class="town-card">
-        <h3>Maidstone</h3>
-        <p class="town-history">Maidstone, the county town of Kent, was a major medieval market center for agriculture and the cloth trade. During the English Civil War, it saw a notable battle between Royalist forces and Parliamentary troops.</p>
-        <div class="visit-section">
-            <img src="assets/images/leeds-castle.jpg" alt="Leeds Castle in Maidstone">
-            <div class="visit-info">
-                <h4>Places to Visit:</h4>
-                <ul>
-                    <li><strong>Leeds Castle:</strong> Often called the "loveliest castle in the world," Leeds Castle has been a royal residence since the 13th century.</li>
-                    <li><strong>Kent Museum of Rural Life:</strong> This museum showcases the rural lifestyle and agricultural practices that defined Kent for centuries.</li>
-                </ul>
-                <a href="https://www.leeds-castle.com" class="learn-more" target="_blank">Learn More</a>
-            </div>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2024 Discover Kent. All rights reserved.</p>
+    </footer>
 
-    <!-- Canterbury Card -->
-    <div class="town-card">
-        <h3>Canterbury</h3>
-        <p class="town-history">Canterbury is renowned for its religious history and the Canterbury Cathedral, a UNESCO World Heritage site. After the murder of Archbishop Thomas Becket in 1170, it became a major pilgrimage site.</p>
-        <div class="visit-section">
-            <img src="assets/images/canterbury-cathedral.jpg" alt="Canterbury Cathedral">
-            <div class="visit-info">
-                <h4>Places to Visit:</h4>
-                <ul>
-                    <li><strong>Canterbury Cathedral:</strong> Headquarters of the Church of England, known for its stained glass and Becket’s Shrine.</li>
-                    <li><strong>St Augustine's Abbey:</strong> Founded in 598, this abbey marks the spread of Christianity in England.</li>
-                    <li><strong>Westgate Towers:</strong> A medieval gatehouse with views over the historic town.</li>
-                </ul>
-                <a href="https://www.canterbury-cathedral.org" class="learn-more" target="_blank">Learn More</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ashford Card -->
-    <div class="town-card">
-        <h3>Ashford</h3>
-        <p class="town-history">A Roman settlement that grew into a significant market town, Ashford became an industrial center in the 19th century thanks to the railway.</p>
-        <div class="visit-section">
-            <img src="assets/images/godinton-house.jpg" alt="Godinton House and Gardens in Ashford">
-            <div class="visit-info">
-                <h4>Places to Visit:</h4>
-                <ul>
-                    <li><strong>Godinton House and Gardens:</strong> A 14th-century house surrounded by beautiful gardens, showcasing historic English country life.</li>
-                    <li><strong>Ashford Museum:</strong> Displays artifacts tracing Ashford's transformation from Roman times to the railway era.</li>
-                </ul>
-                <a href="https://www.godintonhouse.co.uk" class="learn-more" target="_blank">Learn More</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript for Accordion, Search, and Sorting -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Accordion functionality
-            document.querySelectorAll('.accordion').forEach(button => {
-                button.addEventListener('click', () => {
-                    const panel = button.nextElementSibling;
-                    button.classList.toggle('active');
-                    panel.style.maxHeight ? panel.style.maxHeight = null : panel.style.maxHeight = panel.scrollHeight + 'px';
-                });
-            });
-
-            // Search functionality
-            document.getElementById('search').addEventListener('input', function() {
-                const searchText = this.value.toLowerCase();
-                document.querySelectorAll('.town').forEach(town => {
-                    const townName = town.querySelector('.accordion').innerText.toLowerCase();
-                    town.style.display = townName.includes(searchText) ? "" : "none";
-                });
-            });
-
-            // Sort functionality
-            document.getElementById('sort-options').addEventListener('change', function() {
-                const sortBy = this.value;
-                const townContainer = document.getElementById('towns');
-                let townsArray = Array.from(document.querySelectorAll('.town'));
-
-                if (sortBy === 'alphabetical') {
-                    townsArray.sort((a, b) => a.querySelector('.accordion').innerText.localeCompare(b.querySelector('.accordion').innerText));
-                } else if (sortBy === 'historical-period') {
-                    townsArray.sort((a, b) => a.getAttribute('data-period').localeCompare(b.getAttribute('data-period')));
-                }
-
-                townsArray.forEach(town => townContainer.appendChild(town));
-            });
-        });
-    </script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/f0ebc05836.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
