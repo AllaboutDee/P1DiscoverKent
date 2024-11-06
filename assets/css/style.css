@@ -1,538 +1,288 @@
-    /* Google fonts imports */  
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/* Google fonts imports */  
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
-    /* Asterisk wildcard selector to override default styles added by the browser */
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+/* Font Awesome for the burger icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-    /* General styles */
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        /* Generic project styles */
-        color: #3a3a3a;
-        font-family: 'Lato' sans-serif;
-    }
-    
-    h1, h2, h3 {
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        color: #2e2e2e; /* Darker color for headings for contrast */
-        letter-spacing: 2px;
-        /* margin-bottom: 15px; Add margin below headings for spacing */
-    }
-    
-    /* Header */
-    header {
-        background-color: #ffffff; /* Keep header white for clarity */
-        padding: 0 1rem; /* Increased padding for a better look */
-        position: fixed;
-        z-index: 99;
-        width: 100%;
-        box-shadow: 0 2px 2px #e7dfdf; /* or use #3a3a3a */
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline; /* or use center? *?
-        */
-    }
-    header a {
-        text-decoration: none;
-        color: inherit;
-    }
-    /* Align Logo */
-    #logo {
-        align-items: center;
-    }
-
-    #menu {
-        font-size: 110%;
-        letter-spacing: 4px;
-        list-style-type: none;
-        /*display: flex; */
-    }
-
-    #menu > li {
-        margin-right: 1.5rem; 
-        margin-bottom: 1em;
-        /*margin-left: 2em; /* Increased margin for better spacing */
-    }
-    
-    #menu a.active {
-        border-bottom: 2px solid #5a7f37;
-    }
-    
-    /* Active menu item */
-    .active {
-        border-bottom: 2px solid #5a7f37; /* Soft green for active menu item */
-    }
-
-    /* Navbar styles with dropdown toggle */
-    nav {
-        position: relative;
-        background-color: #ffffff;
-        width: 100%;
-        left: 0;
-        padding: 0 1rem;
-        box-shadow: 0 2px 2px #3a3a3a;
-        /*display: none;
-        top: 100%;*/
-    }
-
-    /* Navbar toggle */
-    #nav-toggle:checked~nav {
-        display: block;
-    }
-
-    #nav-toggle {
-        display: none;
-    }
-
-    .nav-toggle-label {
-        font-size: 2rem;
-        display: none;
-        /*
-        display: flex;
-        align-items: center; */
-    }
-
-    /* Main content */
-    main {
-        margin-top: 47px; /* Adjust based on actual header height */
-        flex: 1 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Hero section */
-    #hero {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-        background: url("../images/hero-image.jpg") no-repeat center center / cover;
-        position: relative;
-    }   
-    
-
-    #hero h2, {
-        position: absolute;
-        bottom: 40px;
-        left: 50px;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 10px 15px;
-        border-radius: 5px;
-    }
-    
-    #hero p {
-        bottom: 40px;
-        left: 20px;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 10px 15px;
-
-    }
-
-    #cover-text {
-        /* Final rgba value sets the opacity so it is semi-transparent */
-        background-colour: rgba(241, 109, 107, .7);
-        font-size: 130%;
-        position: absolute;
-        bottom: 30px;
-        width: 80%;
-        min-height: 200px;
-        padding-top: 40px;
-        padding-left: 10px;
-    }
-
-    #cover-text > h2, 
-    #cover-text > h3 {
-        color: #ffffff;
-    }
-
-    /* Garden section */
-    #gardens {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-        background: url("../images/highlights-image.webp") no-repeat center center / cover;
-        position: relative;
-    }   
-    
-    /* Footer */
-    #social-networks {
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        margin: 0 20px;
-        /*align-items: center;
-        text-align: center;
-        margin: 0 20px;*/
-    }
-    
-    #social-networks i {
-        font-size: 160%;
-        padding: 0 15px; /* Adjust for more space if needed */
-    }
-
-    footer {
-        background-color: #2e2e2e;
-        color: #ffffff;
-        padding: 10px 0;
-        text-align: center;
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-    
 
-    /* Media query: medium devices - tablets and larger (576px and up) */
-        @media screen and (min-width: 576px) {
-            photo {
-                column-count: 2;
-                column-gap: 0;
-            }
-        }
+/* STYLING GENERIC FOR ALL PAGES - HEADER/NAVBAR-MENU/FOOTER/BODY */
 
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+    background-color: #c9dbbd;
+}
 
-    /* Media query: medium devices - tablets and larger (768px and up) */
-    @media screen and (min-width: 768px) {
-        /* Header */
-        nav {
-            position: absolute;
-            top: 100%;
-            width: 100%;
-            /*-shadow: none;
-            width: fit-content;
-            padding-right: 1rem;
-            display: block;
-            /*align-items: center;*/
-        }
-    }
-        
-        #menu {
-            flex-directon:column;
-            display: flex;
-        }
+/* Header: Set up main layout and spacing to avoid header overlap, affecting ALL pages */
+header {
+    background-color: #c9dbbd; /* #cfe0cc; Keep header off-white green for clarity */
+    padding: 1rem; /* Increased padding for a better look */
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #e7dfdf;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
 
-        #menu > li {
-            padding-left: 1rem;
-        }
+/* Center the logo */
+#logo {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 3.5rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Space between title and nav */
+}
 
-        #nav-toggle:checked ~ nav ~menu {
-            display: flex;
-        }
+/* Navigation styling */
+nav {
+    width: 80%; /* Set nav to 80% of the header width */
+}
 
-        .nav-toggle-label {
-            display: block;
-            font-size: 2rem;
-        }
+/* Nav toggle - Updated to make burger menu work */
+#nav-toggle:checked ~ nav {
+    display: flex;
+}
 
-        #logo {
-            font-size: 280%;
-            line-height: 75px;
-            margin: 0 0.5rem;
-        }
+#nav-toggle {
+    display: none;
+}
 
-        /* Main content */
-        main {
-            /*push main content to accommodate larger header */
-            margin-top: 79px;
-        }
+.nav-toggle-label {
+    font-size: 2rem;
+    cursor: pointer; /* Make the burger icon clickable */
+}
 
-        /* Hero (reasons) section */
-        #cover-text {
-            width: 300px;
-            right: 50px;
-        }
+/* Menu styling */
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Spread the items across the width */
+    padding: 0; /* Reset padding */
+    letter-spacing: 4px;
+}
 
-        /* Intro  (Reasons) section */
-        #info, /*#benefits-physical*/
-        
+/* Menu links styling */
+#menu a {
+    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+}
 
-    }
+/* Main content */
+main {
+    margin-top: 80px; /* Adjust based on actual header height */
+    padding: 60px; /* Add padding to main content */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-    /* Large devices (laptops an desktops, 992px and up) */
-    @media screen and (min-width: 992px) {
-        #menu a:hover{
-            border-bottom: 1px solid #3a3a3a;
-        }
-    }
+/* Spacing between items */
+#menu li {
+    margin: 0 10px; /* Space between each item */
+}
 
-    @media screen and (min-width: 1200px) {
-        /* (info/ intro (Reasons) section */
-        #intro {
-            display: flex;
-            flex-direction: row;
-    }
+#menu a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color */
+    padding: 10px 15px; /* Add padding for better click area */
+}
 
+/* Active link style */
+#menu a.active {
+    font-weight: bold; /* Highlight the active link */
+}
 
-/* Subscription form */
-#subscribe {
-    background-image: url("../images/kent-subscribe.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 60px 10%; /* Increased padding for more space */
+/* Hero section on home page */
+#hero {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url("../images/hero-image.jpg") no-repeat center center / cover;
+    position: relative;
+    background-size: cover; /* Ensure background image covers the area */
+    background-position: center; /* Center the image */
     display: flex;
     justify-content: center;
+    align-items: center; /* Center the cover text */
 }
 
-#subscribe-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    max-width: 500px;
+/* Heritage section styling */
+#heritage {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 2.0rem; /* Adjust font size as needed */
+    margin-bottom: 0.75rem; /* Space between title and nav */
+    margin-top: 0.75rem;
+}
+
+/* Garden section styling */
+#gardens {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url("../images/highlights-image.webp") no-repeat center center / cover;
+    position: relative;
 }
 
-#subscribe-form h2 {
-    color: #2e2e2e;
-    margin-bottom: 20px;
+/* Cover text */
+#cover-text {
+    color: #ffffffd0;
+    text-shadow: #0d0a0a;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 2.5rem; /* Larger font size for better visibility */
+    width: 80%; /* Adjust width for responsiveness */
     text-align: center;
-}
-
-.text-input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5a7f37; /* Soft green for buttons */
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: #6a9f47; /* Lighter green on hover */
 }
 
 /* Footer */
 footer {
     background-color: #2e2e2e;
-    padding: 20px;
-    text-align: center;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-footer ul li {
-    margin: 0 10px;
-}
-
-footer ul li a {
     color: #ffffff;
-    font-size: 1.5rem;
-}
-
-/* Media query: small devices (max-width: 768px) */
-@media (max-width: 768px) {
-    #menu {
-        flex-direction: column;
-        display: none;
-    }
-
-    #nav-toggle:checked ~ #menu {
-        display: flex;
-    }
-
-    #subscribe-form {
-        width: 90%;
-    }
-}
-
-
-    #hero h2, #hero p {
-        left: 40px;
-        bottom: 60px;
-    }
-}
-
-<!----playing about with "Historical Places" -------------->
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-h2 {
+    padding: 20px 0;
     text-align: center;
-    color: #2c3e50;
 }
 
-/* Town Card Styling */
-.town-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 20px;
-}
-
-.town-card h3 {
-    color: #34495e;
-    margin-top: 0;
-}
-
-.town-history {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Visit Section Styling */
-.visit-section {
+#social-networks {
+    padding: 20px 0;
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px;
+    text-align: center;
 }
 
-.visit-section img {
-    width: 180px;
-    height: 120px;
-    border-radius: 8px;
-    object-fit: cover;
+#social-networks i {
+    font-size: 160%;
+    padding: 0 15px; /* Adjust for more space if needed */
+    color: #ffffff; /* Make social icons white */
 }
 
-.visit-info {
-    flex: 1;
-}
+/* Media queries for responsiveness */
 
-.visit-info h4 {
-    margin-top: 0;
-    color: #2c3e50;
-}
+/* For screens larger than 576px (min-width: 576px) */
+@media screen and (min-width: 576px) {
+    #menu {
+        display: flex; /* Display menu normally on larger screens */
+        flex-direction: row;
+    }
+    .nav-toggle-label {
+        display: none; /* Hide burger icon on larger screens */
+    }
 
-.visit-info ul {
-    padding-left: 20px;
-    margin: 10px 0;
-    list-style-type: disc;
-}
+    /* Resize hero image proportionally on medium screens */
+    #hero {
+        background-size: cover;
+        height: 60vh; /* Reduce hero height on medium screens */
+    }
 
-.visit-info li {
-    margin-bottom: 5px;
-}
-
-/* Learn More Button */
-.learn-more {
-    display: inline-block;
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.learn-more:hover {
-    background-color: #3498db;
-}
-<!-----stacking images with the div----->
-.visit-section {
-    display: flex;                /* Enable flexbox layout */
-    align-items: flex-start;      /* Align items at the start */
-    margin-top: 10px;            /* Top margin for spacing */
-}
-
-.visit-section img {
-    width: 20%;                /* Set a fixed width for the images */
-    height: auto;                /* Maintain aspect ratio */
-    border-radius: 8px;          /* Round corners */
-    object-fit: cover;           /* Crop the image to fill the space */
-    margin-right: 10px;          /* Space between images and text */
-}
-
-.visit-info {
-    flex: 1;                      /* Allow text to take the remaining space */
-}
-
-
-/* General styles for event cards */
-.event-card {
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    margin: 10px; /* Margin around each card */
-    padding: 15px; /* Padding inside the card */
-    text-align: center; /* Centered text */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background-color: #fff; /* White background */
-    flex: 1 1 calc(25% - 20px); /* Four cards per row on large screens */
-}
-
-/* Responsive styles */
-@media (max-width: 1024px) { /* Tablets */
-    .event-card {
-        flex: 1 1 calc(33.33% - 20px); /* Three cards per row */
+    #cover-text {
+        font-size: 2rem; /* Resize the cover text */
     }
 }
 
-@media (max-width: 768px) { /* Mobile devices */
-    .event-card {
-        flex: 1 1 calc(100% - 20px); /* One card per row */
+/* For medium screens like iPads (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    #menu {
+        justify-content: flex-start; /* Align menu to the left */
+    }
+
+    /* Resize hero image proportionally on larger screens */
+    #hero {
+        background-size: cover;
+        height: 50vh; /* Reduce hero height on larger screens */
+    }
+
+    #cover-text {
+        font-size: 2.5rem; /* Increase the font size of cover text */
     }
 }
 
-/* Flexbox container for cards */
-#events-list {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap onto new lines */
-    justify-content: space-between; /* Space between cards */
+/* For larger screens like laptops (min-width: 992px) */
+@media screen and (min-width: 992px) {
+    #menu {
+        justify-content: center; /* Center menu items on larger screens */
+    }
+    main {
+        padding: 80px; /* Increase padding for larger screens */
+    }
+
+    /* Adjust hero section size on large screens */
+    #hero {
+        height: 45vh; /* Smaller height for hero on large screens */
+    }
+
+    #cover-text {
+        font-size: 3rem; /* Increase cover text size on larger screens */
+    }
 }
 
-/* Image styling */
-.event-card img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+/* Mobile styles (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    /* Style the header and nav for mobile */
+    header {
+        position: relative;
+    }
+
+    #menu {
+        flex-direction: column; /* Stack menu items vertically */
+        display: none; /* Hide menu by default on mobile */
+        width: 100%;
+        background-color: #c9dbbd; /* Same background as header */
+        box-shadow: 0 2px 2px #e7dfdf; /* Optional box shadow for dropdown effect */
+    }
+
+    /* Show menu when checkbox is checked */
+    #nav-toggle:checked + .nav-toggle-label + nav #menu {
+        display: flex;
+
+
+    /* Burger menu icon */
+    .nav-toggle-label {
+        display: block; /* Show burger icon on mobile */
+        font-size: 2rem;
+        cursor: pointer; /* Make it clickable */
+        color: #3a3a3a;
+    }
+
+    #menu li {
+        text-align: center;
+        margin: 15px 0; /* Adjust space between items */
+    }
+
+    #menu a {
+        padding: 15px;
+        display: block; /* Make links block-level to occupy the full width */
+    }
+
+    /* Hero image adjustments for mobile */
+    #hero {
+        background-size: cover;
+        height: 50vh; /* Decrease height of hero on mobile */
+    }
+
+    #cover-text {
+        font-size: 2rem; /* Adjust cover text size */
+        bottom: 10%; /* Move text higher to avoid being too low */
+        left: 10%;
+        width: 80%;
+    }
 }
 
-/* Card titles */
-.event-card h3 {
-    margin: 10px 0 5px; /* Margin for spacing */
-}
-
-/* Card details */
-.event-card p {
-    margin: 5px 0; /* Spacing for paragraph */
-}
-
-/* Under Contruction image */
-.construction-image {
-    width: 30%;
-    height: auto;
-    margin-side: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
