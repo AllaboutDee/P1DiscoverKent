@@ -1,0 +1,37 @@
+/* Responsive styles */
+@media (max-width: 1024px) { /* Tablets */
+        .event-card {
+         flex: 1 1 calc(33.33% - 20px); /* Three cards per row */
+        }
+    }
+    
+    @media (max-width: 768px) { /* Mobile devices */
+        .event-card {
+         flex: 1 1 calc(100% - 20px); /* One card per row */
+        }
+    }
+    
+    /* Flexbox container for cards */
+    #events-list {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+        justify-content: space-between; /* Space between cards */
+    }
+    
+    /* Image styling */
+    .event-card img {
+        max-width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+    }
+    
+    /* Card titles */
+    .event-card h3 {
+        margin: 10px 0 5px; /* Margin for spacing */
+    }
+    
+    /* Card details */
+    .event-card p {
+        margin: 5px 0; /* Spacing for paragraph */
+    }
+    

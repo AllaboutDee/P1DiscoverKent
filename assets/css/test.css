@@ -1,0 +1,225 @@
+/* Google fonts imports */   
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Oswald:wght@200..700&display=swap');
+
+/* Font Awesome for the burger icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for all pages */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #c9dbbd;
+    padding: 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #e7dfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo styling */
+#logo {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: black;
+    text-decoration: none; /* No underline */
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styling */
+nav {
+    width: 80%;
+}
+
+/* Hide burger menu and label on larger screens */
+.nav-toggle-label, #nav-toggle {
+    display: none;
+}
+
+/* Show burger menu only on mobile */
+@media screen and (max-width: 576px) {
+    .nav-toggle-label {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #3a3a3a;
+    }
+    #nav-toggle {
+        display: inline;
+    }
+}
+
+/* Burger menu toggle */
+#nav-toggle:checked ~ nav #menu {
+    display: flex;
+}
+
+/* Menu styling */
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    letter-spacing: 4px;
+}
+
+#menu a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+}
+
+#menu a.active {
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    margin-top: 80px;
+    padding: 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-networks {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 0 15px;
+    color: #ffffff;
+}
+
+/* Typography styling */
+h2, h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 576px) {
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #menu {
+        justify-content: center;
+    }
+    main {
+        padding: 80px;
+    }
+
+    #cover-text {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        position: relative;
+    }
+
+    #menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #c9dbbd;
+        box-shadow: 0 2px 2px #e7dfdf;
+    }
+
+    #nav-toggle:checked + .nav-toggle-label + nav #menu {
+        display: flex;
+    }
+
+    #menu li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    #menu a {
+        padding: 15px;
+        display: block;
+    }
+
+    #cover-text {
+        font-size: 2rem;
+        bottom: 10%;
+        left: 10%;
+        width: 80%;
+    }
+}
+
+/* HISTORY PAGE SPECIFIC */
+
+/* Main container styling */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image gallery layout */
+.photos-container {
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .photos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .photos-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,406 @@
+/* Google fonts imports */  
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* Font Awesome for the burger icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Apply global styling for body and header */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #c9dbbd;
+    color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 0px;
+}
+
+/* Header Styling */
+header {
+    background-color: #c9dbbd;
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #e7dfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the header */
+header {
+    position: relative; /* Make header the containing block for absolute positioning */
+    padding: 20px;
+    background-color: #f1f1f1; /* Example background */
+}
+
+/* Style for the search bar */
+.search-bar {
+    position: absolute;
+    top: 20px; /* Adjust the top margin from the header */
+    right: 10px; /* Adjust the right margin to move it to the right edge */
+}
+
+/* Style for the filter bar */
+.filter-bar {
+    position: absolute;
+    top: 20px; /* Aligns with search bar vertically */
+    right: 120px; /* Position the filter bar slightly left from the search bar */
+}
+
+/* Optionally, style the input and select elements */
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.filter-bar select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+/* Responsive Navbar */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/* Center the logo */
+#logo {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 3.5rem; /* Adjust font size as needed */
+    color: #3a3a3a;
+    margin-bottom: 0.5rem; /* Space between title and nav */
+}
+
+/* Styling for h2 Headings */
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #2c3e50; /* Optional: Add specific color for h2 */
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    width: 80%; /* Set nav to 80% of the header width */
+}
+
+/* Nav toggle - Updated to make burger menu work */
+#nav-toggle:checked ~ nav {
+    display: flex;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    cursor: pointer; /* Make the burger icon clickable */
+}
+
+.nav-toggle-label, #menu li {
+    color: inherit;
+}
+#menu li a i {
+    color: #3a3a3a; /* or any other color to avoid purple */
+}
+
+
+
+/* Menu styling */
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Spread the items across the width */
+    padding: 0; /* Reset padding */
+    letter-spacing: 4px;
+}
+
+/* Menu links styling */
+#menu a {
+    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Towns Section Styling */
+#towns {
+    padding: 2rem;
+    margin-top: 100px; /* To offset fixed header */
+    max-width: 95%;
+    margin: auto;
+}
+
+#towns h2, #intro-places h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*#filters {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 120px;  /* Adjusted for extra space to avoid overlap with the header */
+}
+
+/*#search {
+    position: relative;
+    z-index: 99; /* Ensure it stays above other content */
+}
+
+
+#intro-places p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Visit Section Styling */
+.visit-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.visit-section img {
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.visit-info {
+    flex: 1;
+}
+
+.visit-info h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.visit-info ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+.visit-info li {
+    margin-bottom: 5px;
+}
+
+/* Learn More Button */
+.learn-more {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #3498db;
+}
+
+/* Town Cards */
+.town-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Search and Filter Options */
+#filters {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#search, #sort-options {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .visit-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visit-section img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .visit-info {
+        text-align: center;
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search, #sort-options {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-toggle-label {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #3a3a3a;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #c9dbbd;
+    }
+
+    #nav-toggle:checked ~ nav #menu {
+        display: flex;
+    }
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-networks {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 0 15px; /* Adjust for more space if needed */
+    color: #ffffff; /* Make social icons white */
+}
+
+
+
+/* Visit Section Styling */	
+.visit-section {	
+        display: flex;	
+        gap: 20px;	
+        align-items: flex-start;	
+        margin-top: 10px;	
+    }	
+        
+    .visit-section img {	
+        width: 180px;	
+        height: 120px;	
+        border-radius: 8px;	
+        object-fit: cover;	
+    }	
+        
+    .visit-info {	
+        flex: 1;	
+    }	
+        
+    .visit-info h4 {	
+        margin-top: 0;	
+        color: #2c3e50;	
+    }	
+        
+    .visit-info ul {	
+        padding-left: 20px;	
+        margin: 10px 0;	
+        list-style-type: disc;	
+    }	
+        
+    .visit-info li {	
+        margin-bottom: 5px;	
+    }	
+        
+    /* Learn More Button */	
+    .learn-more {	
+        display: inline-block;	
+        background-color: #2c3e50;	
+        color: #fff;	
+        padding: 8px 16px;	
+        border-radius: 4px;	
+        text-decoration: none;	
+        font-weight: bold;	
+        margin-top: 10px;	
+        transition: background-color 0.3s ease;	
+    }	
+        
+    .learn-more:hover {	
+        background-color: #3498db;	
+    }	
+    <!-----stacking images with the div----->	
+    .visit-section {	
+        display: flex; /* Enable flexbox layout */	
+        align-items: flex-start; /* Align items at the start */	
+         margin-top: 10px; /* Top margin for spacing */	
+    }
+        
+    .visit-section img {	
+        width: 20%; /* Set a fixed width for the images */	
+        height: auto; /* Maintain aspect ratio */	
+        border-radius: 8px; /* Round corners */	
+        object-fit: cover; /* Crop the image to fill the space */	
+        margin-right: 10px; /* Space between images and text */	
+    }	
+        
+    .visit-info {	
+        flex: 1; /* Allow text to take the remaining space */	
+    }	
+        
+        
+    /* General styles for event cards */	
+    .event-card {	
+        border: 1px solid #ccc; /* Light border */	
+        border-radius: 8px; /* Rounded corners */	
+        margin: 10px; /* Margin around each card */	
+        padding: 15px; /* Padding inside the card */	
+        text-align: center; /* Centered text */	
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */	
+        background-color: #fff; /* White background */	
+        flex: 1 1 calc(25% - 20px); /* Four cards per row on large screens */	
+    }	
+    

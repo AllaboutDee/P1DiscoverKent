@@ -1,0 +1,49 @@
+/* Subscription form */
+#subscribe {
+        background-image: url("../images/kent-subscribe.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 60px 10%; /* Increased padding for more space */
+        display: flex;
+        justify-content: center;
+    }
+    
+    #subscribe-form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #subscribe-form h2 {
+        color: #2e2e2e;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .text-input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #5a7f37; /* Soft green for buttons */
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .submit-button:hover {
+        background-color: #6a9f47; /* Lighter green on hover */
+    }
+    
+    

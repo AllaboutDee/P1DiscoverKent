@@ -11,26 +11,39 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/accordianstyle.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
+        <div class="logo">Your Logo</div>
+        <div class="search-filter-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <select class="town-filter">
+                <option value="">Select Town</option>
+                <option value="town1">Town 1</option>
+                <option value="town2">Town 2</option>
+                <!-- More options here -->
+            </select>
+        </div>
+    </header>
+    
+    <header>
         <h1 id="logo">Discover Kent</h1>
         <input type="checkbox" id="nav-toggle" name="nav-toggle" style="display: none;">
-        <label for="nav-toggle" class="nav-toggle-label">
+        <label for="nav-toggle" class="nav-toggle-label" style="display: none;">
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav>
             <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="places.html">Historical Places</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="directory.html">Kent Directory</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
-                <li><a href="test.html">Test</a></li>
+                <li><a href="hisplaces.html class="active"></a>His Places</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +51,7 @@
     <!-- Main content -->
     <main>
         <!-- Hero Section -->
-        <section id="hero">
+        <section id="hero" class="hero">
             <div id="cover-text">
                 <h2>Kent's Historical Architecture</h2>
             </div>
@@ -48,12 +61,13 @@
         <section>
             <br>
             <h2 id="heritage">Explore the Heart of England's Heritage</h2>
-            <br>
+            <div>
                 <p>Welcome to Kent, the Garden of England—a place where history meets vibrant culture. From ancient castles and iconic cathedrals to lush landscapes and charming coastal towns, Kent offers endless opportunities for exploration.</p>
                 <br>
-                <br>
                 <p>Discover centuries-old stories, breathtaking sights, and exciting events throughout the county. Whether you're here for a family day out or an immersive journey through England's past, Kent is ready to enchant you.</p>
+            </div>
             <br>
+            <div>
             <hr>
             <br>
                 <!-- Garden Section -->
@@ -67,20 +81,20 @@
             <hr>
             <br>
             <!-----Featured highlight section-->
-                <h2>Historical Towns <i class="fa-solid fa-landmark"></i></h2>
+            <div>
+                <h3>Historical Towns <i class="fa-solid fa-landmark"></i></h3>
                 <p>Discover unique towns across Kent, each with a fascinating story to tell.</p>
                 <a href="places.html" class="btn">Learn More</a>
                 <br>
-                <br>
-                <h2>Upcoming Events <i class="fa-solid fa-calendar-days"></i></h2>
+                <h3>Upcoming Events <i class="fa-solid fa-calendar-days"></i></h3>
                 <p>Don’t miss Kent’s annual festivals, fairs, and historical reenactments.</p>
                 <a href="events.html" class="btn">View Events</a>
                 <br>
-                <br>
-                <h2>Special Offers <i class="fa-solid fa-highlighter"></i></h2>
+                <h3>Special Offers <i class="fa-solid fa-highlighter"></i></h3>
                 <p>Subscribe to receive exclusive offers, discounts, and more.</p>
                 <a href="subscribe.html" class="btn">Subscribe Now</a>
                 <br>
+            </div>
         </section>
     </main>
 

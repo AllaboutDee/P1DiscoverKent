@@ -1,0 +1,176 @@
+/* Google fonts imports */  
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+    background-color: #c9dbbd;
+}
+
+/* Header */
+header {
+    background-color: #c9dbbd; /* #cfe0cc; /* Keep header off-white green for clarity */
+    padding: 1rem; /* Increased padding for a better look */
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #e7dfdf;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Center the logo */
+#logo {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Space between title and nav */
+}
+
+nav {
+    width: 80%; /* Set nav to 80% of the header width */
+}
+
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Spread the items across the width */
+    padding: 0; /* Reset padding */
+}
+
+
+#menu a {
+    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Main content */
+main {
+    margin-top: 80px; /* Adjust based on actual header height */
+    padding: 20px; /* Add padding to main content */
+    flex: 1;
+}
+
+/* Add spacing between items */
+#menu li {
+    margin: 0 10px; /* Space between each item */
+}
+
+#menu a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color */
+    padding: 10px 15px; /* Add padding for better click area */
+}
+
+/* Active link style */
+#menu a.active {
+    font-weight: bold; /* Highlight the active link */
+}
+
+/* Hero section */
+#hero {
+    width: 100%;
+    height: 600px;
+    background: url("../images/hero-image.jpg") no-repeat center center / cover;
+    position: relative;
+}
+
+
+
+#heritage {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 2.0rem; /* Adjust font size as needed */
+    margin-bottom: 0.75rem; /* Space between title and nav */
+    margin-top: 0.75rem;
+}
+
+    /* Garden section */
+    #gardens {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        background: url("../images/highlights-image.webp") no-repeat center center / cover;
+        position: relative;
+    }   
+
+/* Cover text */
+#cover-text {
+    
+    color: #ffffffd0;
+    text-shadow: #0d0a0a;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 2.0rem; 
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-networks {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px;
+    /*align-items: center;
+    text-align: center;
+    margin: 0 20px;*/
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 0 15px; /* Adjust for more space if needed */
+    color: #ffffff; /* Make social icons white */
+    font-size: 1.5rem;
+}
+
+/*#social-networks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space out social icons */
+}
+
+/*
+#social-networks a {
+    color: #ffffff; /* Make social icons white */
+    font-size: 1.5rem;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        display: none; /* Hide menu by default on mobile */
+    }
+
+    #nav-toggle:checked ~ #menu {
+        display: flex; /* Show menu when checkbox is checked */
+    }
+}

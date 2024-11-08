@@ -11,17 +11,29 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/historicalplacesstyle.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by town..." aria-label="Search by town">
+        </div>   
+        <div class="filter-bar"> 
+            <select id="sort-options" aria-label="Sort by">
+                <option value="alphabetical">Sort by Town (A-Z)</option>
+                <option value="historical-period">Sort by Historical Period</option>
+            </select>
+        </div>
+        </section>
+
+        <a href="index.html" aria-label="Go to Home page">Home</a>
             <h1 id="logo">Discover Kent</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;>
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav>
@@ -32,7 +44,6 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="directory.html">Kent Directory</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
-                <li><a href="hisplaces.html">His Places</a></li>
             </ul>
         </nav>
     </header>
@@ -753,7 +764,18 @@
 
             townsArray.forEach(town => townContainer.appendChild(town));
         });
+
+        / * Smooth scroll */
+        document.querySelectorAll('.learn-more').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = this.href;
+            });
+        });
     </script>
+
+    /
+    
 
     <!-- Footer -->
     <footer>
