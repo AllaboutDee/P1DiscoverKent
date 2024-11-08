@@ -1,3 +1,149 @@
+/* Google fonts imports */  
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* Font Awesome for the burger icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* STYLING GENERIC FOR ALL PAGES - HEADER/NAVBAR-MENU/FOOTER/BODY */
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+    background-color: #c9dbbd;
+}
+
+/* Header: Set up main layout and spacing to avoid header overlap, affecting ALL pages */
+header {
+    background-color: #c9dbbd; /* #cfe0cc; Keep header off-white green for clarity */
+    padding: 1rem; /* Increased padding for a better look */
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #e7dfdf;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Center the logo */
+#logo {
+    text-align: center; /* Center text */
+    font-family: 'Great Vibes', cursive; /* Change font to Great Vibes */
+    font-size: 3.5rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Space between title and nav */
+}
+
+/* Navigation styling */
+nav {
+    width: 80%; /* Set nav to 80% of the header width */
+}
+
+/* Nav toggle - Updated to make burger menu work */
+#nav-toggle:checked ~ nav {
+    display: flex;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    cursor: pointer; /* Make the burger icon clickable */
+}
+
+/* Menu styling */
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Spread the items across the width */
+    padding: 0; /* Reset padding */
+    letter-spacing: 4px;
+}
+
+/* Menu links styling */
+#menu a {
+    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Main content */
+main {
+    margin-top: 80px; /* Adjust based on actual header height */
+    padding: 60px; /* Add padding to main content */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Spacing between items */
+#menu li {
+    margin: 0 10px; /* Space between each item */
+}
+
+#menu a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color */
+    padding: 10px 15px; /* Add padding for better click area */
+}
+
+/* Active link style */
+#menu a.active {
+    font-weight: bold; /* Highlight the active link */
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-networks {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 0 15px; /* Adjust for more space if needed */
+    color: #ffffff; /* Make social icons white */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Subscription form */
 #subscribe {
         background-image: url("../images/kent-subscribe.jpg");
